@@ -25,5 +25,6 @@ module.exports = {
     quotes: "off",
     "import/prefer-default-export": "off",
     "no-use-before-define": "off",
+    "react/no-unknown-property": ["error", { ignore: ["css", "options"] }],
   },
 };
