@@ -18,8 +18,6 @@ import {
   cpp,
   menu_company,
   carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
