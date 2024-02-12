@@ -19,6 +19,7 @@ import {
   menu_company,
   carrent,
   threejs,
+  menuLogo,
 } from "../assets";
 
 export const navLinks = [
@@ -168,7 +169,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: menuLogo,
     source_code_link: "https://github.com/",
   },
 ];

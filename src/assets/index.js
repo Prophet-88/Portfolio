@@ -29,6 +29,7 @@ import menu_company from "./company/menu.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import menuLogo from "./menu_logo.png";
 
 export {
   rui_logo,
@@ -59,4 +60,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  menuLogo,
 };
