@@ -7,19 +7,16 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
   flutter,
   cpp,
   menu_company,
-  carrent,
   threejs,
   menuLogo,
+  comingSoon,
 } from "../assets";
 
 export const navLinks = [
@@ -73,10 +70,6 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -170,7 +163,15 @@ const projects = [
       },
     ],
     image: menuLogo,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://apps.apple.com/jp/app/menu-%E5%8A%A0%E7%9B%9F%E5%BA%97%E3%83%94%E3%83%83%E3%82%AB%E3%83%BC%E7%94%A8/id6473827379",
+  },
+  {
+    name: "",
+    description: "More Coming Soon...",
+    tags: [],
+    image: comingSoon,
+    source_code_link: "",
   },
 ];
 
