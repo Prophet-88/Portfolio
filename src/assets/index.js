@@ -7,6 +7,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import home from "./home.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -29,6 +30,8 @@ import menu_company from "./company/menu.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import menuLogo from "./menu_logo.jpg";
+import comingSoon from "./coming_soon.jpg";
 
 export {
   rui_logo,
@@ -38,6 +41,7 @@ export {
   mobile,
   web,
   github,
+  home,
   menu,
   close,
   css,
@@ -59,4 +63,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  menuLogo,
+  comingSoon,
 };
