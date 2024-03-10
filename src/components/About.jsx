@@ -47,7 +47,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a professional software engineer with experience in Dart, JavaScript
-        and Typescript, and experience in frmaeworks like React Native, Flutter,
+        and Typescript, and experience in frameworks like React Native, Flutter,
         and Three.js. Can't wait to work with you!
       </motion.p>
 
