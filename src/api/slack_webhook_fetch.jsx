@@ -3,9 +3,6 @@ import axios from "axios";
 const webhook = import.meta.env.VITE_SLACK_WEBHOOK_URL;
 const user_id = import.meta.env.VITE_SLACK_USER_ID;
 
-console.log(`Webhook: ${webhook}`);
-console.log(`user_id ${user_id}`);
-
 const sendSlackMessage = async (form) => {
   const payload = {
     blocks: [
@@ -32,8 +29,6 @@ const sendSlackMessage = async (form) => {
     ],
   };
 
-  console.log(payload);
-
   let res;
   try {
     res = await axios.post(webhook, JSON.stringify(payload), {
@@ -54,16 +49,7 @@ const sendSlackMessage = async (form) => {
       console.log("Error");
     }
   } catch (error) {
-    if (error.response) {
-      console.log(error.response.data);
-      console.log(error.response.status);
-      console.log(error.response.headers);
-    } else if (error.request) {
-      console.log(error.request);
-    } else {
-      console.log("Error", error.message);
-    }
-    console.log(error.config);
+    console.log("Error");
   }
 };
 
