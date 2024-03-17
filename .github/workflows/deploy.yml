@@ -39,6 +39,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          VITE_SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          VITE_SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

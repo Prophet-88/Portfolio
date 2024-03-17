@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import sendSlackMessage from "../api/slack_webhook_fetch";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -13,8 +13,24 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await sendSlackMessage(form);
+      setLoading(false);
+    } catch (error) {
+      console.log("An error occurred", error);
+      setLoading(false);
+    }
+
+    setForm({ name: "", email: "", message: "" });
+  };
 
   return (
     <div className="xl: mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -51,7 +67,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows={7}
-              name="name"
+              name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Please kindly leave your message here"
@@ -62,6 +78,7 @@ const Contact = () => {
           <button
             type="submit"
             className="bg-teritary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary round-xl"
+            onSubmit={handleSubmit}
           >
             {loading ? "Sending..." : "Send"}
           </button>
