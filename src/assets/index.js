@@ -1,5 +1,4 @@
 import rui_logo from "./rui_logo.png";
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -8,6 +7,8 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import home from "./home.png";
+import linkedin_logo from "./linkedin_logo.png";
+import reazon from "./company/reazon.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -24,6 +25,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import flutter from "./tech/flutter.svg";
 import cpp from "./tech/cpp.png";
+import firebase from './tech/firebase.svg';
 
 import menu_company from "./company/menu.png";
 
@@ -35,7 +37,6 @@ import comingSoon from "./coming_soon.jpg";
 
 export {
   rui_logo,
-  logo,
   backend,
   creator,
   mobile,
@@ -44,6 +45,8 @@ export {
   home,
   menu,
   close,
+  linkedin_logo,
+  reazon,
   css,
   docker,
   figma,
@@ -59,6 +62,7 @@ export {
   threejs,
   flutter,
   cpp,
+  firebase,
   menu_company,
   carrent,
   jobit,
